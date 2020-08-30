@@ -1,0 +1,153 @@
+/*==== GLOBAL STYLES ====*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*==== END GLOBAL STYLES ====*/
+
+/*==== HEADER-NAVBAR STYLES ====*/
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img.logo{
+    width: 160px;
+    cursor: pointer;
+}
+
+.navbar nav{
+    flex: 1;
+    padding-left: 60px;
+}
+
+.navbar nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+.navbar nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.navbar nav ul li a:hover{
+    color: #ff77cd;
+}
+
+.navbar img.cart{
+    width: 40px;
+    cursor: pointer;
+}
+
+.navbar img.cart:hover{
+    animation: hang 1s infinite;
+}
+
+@keyframes hang {
+    0% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    50% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    100% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  }
+/*==== END HEADER-NAVBAR STYLES ====*/
+
+/*==== MAIN STYLES ====*/
+main{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+main a.btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFF;
+    box-shadow: 4px 4px 5px rgba(94, 28, 68, 0.3);
+}
+
+main a.btn:hover {
+    background: linear-gradient(45deg, #ff77cd, #87adfe )
+}
+
+main h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+
+main p{
+    font-size: 20px;
+    color: #6a7199;
+}
+
+main .arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+
+main .arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+}
+
+.container img.feature-img{
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+/*==== END MAIN STYLES ====*/
+
+/*==== SOCIAL LINKS STYLES ====*/
+.container .social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+
+.container .social-links a{
+    text-decoration: none;
+    color: #6a7199;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.container .social-links a:hover{
+    color: #ff77cd;
+}
+/*==== END SOCIAL LINKS STYLES ====*/
+
+/*===== RESPONSIVE WEB DESIGN =====*/
+
+        /* MEDIA QUERYS HERE */
+
+/*==== END RESPONSIVE WEB DESIGN ====*/
